@@ -87,6 +87,7 @@ namespace IdentityModel.UnitTests
                 new Claim("active", "true", ClaimValueTypes.String, "https://idsvr4"),
                 new Claim("scope", "api1", ClaimValueTypes.String, "https://idsvr4"),
                 new Claim("scope", "api2", ClaimValueTypes.String, "https://idsvr4"),
+                new Claim("realm_access", "{ \"roles\": [ \"uma_authorization\" ] }", "JSON", "https://idsvr4"),
             });
         }
 
@@ -124,6 +125,7 @@ namespace IdentityModel.UnitTests
                 new Claim("active", "true", ClaimValueTypes.String, "LOCAL AUTHORITY"),
                 new Claim("scope", "api1", ClaimValueTypes.String, "LOCAL AUTHORITY"),
                 new Claim("scope", "api2", ClaimValueTypes.String, "LOCAL AUTHORITY"),
+                new Claim("realm_access", "{ \"roles\": [ \"uma_authorization\" ] }", "JSON", "LOCAL AUTHORITY"),
             });
         }
 
@@ -164,6 +166,7 @@ namespace IdentityModel.UnitTests
                 new Claim("active", "true", ClaimValueTypes.String, "https://idsvr4"),
                 new Claim("scope", "api1", ClaimValueTypes.String, "https://idsvr4"),
                 new Claim("scope", "api2", ClaimValueTypes.String, "https://idsvr4"),
+                new Claim("realm_access", "{ \"roles\": [ \"uma_authorization\" ] }", "JSON", "https://idsvr4"),
             });
 
             // repeat
@@ -188,6 +191,7 @@ namespace IdentityModel.UnitTests
                 new Claim("active", "true", ClaimValueTypes.String, "https://idsvr4"),
                 new Claim("scope", "api1", ClaimValueTypes.String, "https://idsvr4"),
                 new Claim("scope", "api2", ClaimValueTypes.String, "https://idsvr4"),
+                new Claim("realm_access", "{ \"roles\": [ \"uma_authorization\" ] }", "JSON", "https://idsvr4"),
             });
         }
 
@@ -295,6 +299,7 @@ namespace IdentityModel.UnitTests
                 new Claim("active", "true", ClaimValueTypes.String, "https://idsvr4"),
                 new Claim("scope", "api1", ClaimValueTypes.String, "https://idsvr4"),
                 new Claim("scope", "api2", ClaimValueTypes.String, "https://idsvr4"),
+                new Claim("realm_access", "{ \"roles\": [ \"uma_authorization\" ] }", "JSON", "https://idsvr4"),
             });
         }
 

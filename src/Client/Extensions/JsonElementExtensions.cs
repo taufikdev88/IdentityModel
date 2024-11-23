@@ -1,4 +1,4 @@
-﻿// Copyright (c) Duende Software. All rights reserved.
+// Copyright (c) Duende Software. All rights reserved.
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 using System.Collections.Generic;
@@ -36,6 +36,10 @@ public static class JsonElementExtensions
                 {
                     claims.Add(new Claim(x.Name, Stringify(item), ClaimValueTypes.String, issuer));
                 }
+            }
+            else if (x.Value.ValueKind == JsonValueKind.Object)
+            {
+                claims.Add(new Claim(x.Name, Stringify(x.Value), "JSON", issuer));
             }
             else
             {
